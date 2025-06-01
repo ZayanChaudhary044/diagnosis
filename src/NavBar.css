@@ -1,0 +1,24 @@
+ul {
+  display: flex;
+  list-style-type: none;
+  padding-top: 0.25em;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li {
+  margin-right: 5em;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginbutton {
+  margin-left: auto;
+}
