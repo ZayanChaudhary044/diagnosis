@@ -16,10 +16,10 @@ function NavBar() {
                 <li><Link to="news" element={<News />}>MediNews</Link></li>
                 <li><Link to="symp-check" element={<Schecker />}>Diagnosis</Link></li>
                 <li><Link to="stats" element={<Stats />}>Statistics</Link></li>
-                <li><Link to="assess-centre" element={<AssessMedi />}>AssessMedi</Link></li>
+                <li><Link to="assess-center" element={<AssessMedi />}>AssessMedi</Link></li>
 
                 <div className="loginbutton">
-                    <li><Link to="login" element={<Login />}>Login</Link></li>
+                    <li><Link to="login" element={<Login />} className="glass-button">Login</Link></li>
                 </div>
             </ul>
         </div>

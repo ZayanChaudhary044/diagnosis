@@ -1,0 +1,52 @@
+
+.slogan{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-top:4em;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.no1{
+    padding-top:3.5em;
+    font-family: 'Inter', sans-serif;
+}
+
+.team{
+    margin-top:4.5em;
+}
+
+.imgtile{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15rem;
+}
+
+img{
+    width:30em;
+    height:30em;
+}
+
+.teammember1 p, h2{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:900;
+}
+
+.teammember2 p, h2{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:900;
+}
+
+.contact{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:2em;
+}
+
