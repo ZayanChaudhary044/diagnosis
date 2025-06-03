@@ -1,0 +1,41 @@
+.articles {
+    background-color: white;
+    border: none;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+  }
+  
+  .articles li {
+    margin-right: auto;
+  }
+  
+.source {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.title{
+    display: flex;
+    margin-right: auto;
+}
+
+.newsborder {
+}
+
+.articles li:nth-child(3n+1) {
+    grid-column: 1;
+    border-left: 2px solid #138496;
+  }
+  
+  .articles li:nth-child(3n+2) {
+    grid-column: 2;
+    border-left: 2px solid #138496;
+    border-right: 2px solid #138496;
+  }
+  
+  .articles li:nth-child(3n+3) {
+    grid-column: 3;
+  }

@@ -21,13 +21,13 @@ function HomePage() {
         <h2 className="team">Meet The Team</h2>
         <div className="imgtile">
           <div className="teammember1">
-            <img src={empty}></img>
+            <img src={empty} alt="studentcard"></img>
             <h2>Zayan Chaudhary</h2>
             <p>Undergrad Student</p>
           </div>
 
           <div className="teammember2">
-            <img src={empty}></img>
+            <img src={empty} alt="studentcard"></img>
             <h2>Jamal Qadri</h2>
             <p>Undergrad Student</p>
           </div>
