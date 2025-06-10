@@ -23,6 +23,7 @@
 }
 
 .newsborder {
+  margin: 10px;
 }
 
 .articles li:nth-child(3n+1) {
