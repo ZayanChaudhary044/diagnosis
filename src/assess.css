@@ -1,0 +1,42 @@
+.assess-form {
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.result p {
+  display: flex;
+  justify-content: center;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #e0f7fa;
+  margin-top: 1rem;
+}
