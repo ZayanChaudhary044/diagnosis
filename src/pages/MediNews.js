@@ -28,8 +28,6 @@ function MediNews() {
       }
     };
 
-
-  
     return (
       <div className="Home">
         <header className="container">
