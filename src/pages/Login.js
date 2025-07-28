@@ -1,9 +1,15 @@
+import "../login.css";
 
 function Login() {
     return (
       <div className="Home">
         <header className="container">
           <h1>Login</h1>
+          <container>
+            <border className="login-border">
+
+            </border>
+          </container>
         </header>
       </div>
     );

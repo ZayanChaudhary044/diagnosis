@@ -12,7 +12,7 @@ function NavBar() {
         <div>
             <h1>AskMedi</h1>
             <ul>
-                <li><Link to="home-page" element={<HomePage />}>Home</Link></li>
+                <li><Link to="/" element={<HomePage />}>Home</Link></li>
                 <li><Link to="news" element={<News />}>MediNews</Link></li>
                 <li><Link to="symp-check" element={<Schecker />}>Diagnosis</Link></li>
                 <li><Link to="stats" element={<Stats />}>Statistics</Link></li>
