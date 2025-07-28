@@ -67,10 +67,10 @@ function AssessMedi() {
         <p>Receive personalised results in seconds</p>
         <form className="assess-form">
           <div className="form-group">
-            <label>Weight(kg)
+            <label>Weight (kg)
               <input type="text" id="weight" name="weight" value={weight} onChange={handleWeightChange} placeholder="Enter your weight" required />
             </label>
-            <label>Height(cm)
+            <label>Height (cm)
               <input type="text" id="height" name="height" value={height} onChange={handleHeightChange} placeholder="Enter your height" required />
             </label>
             <div className="button-container">
