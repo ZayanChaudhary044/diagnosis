@@ -5,7 +5,7 @@ function SymptomCheck() {
   return (
     <div>
       <h2>Symptom Checker</h2>
-      <p>Enter your symptoms to begin diagnosis.</p>
+      <p style={{ marginLeft: '20px'}}>Enter your symptoms to begin diagnosis.</p>
     </div>
   );
 }

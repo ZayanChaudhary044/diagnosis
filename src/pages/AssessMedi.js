@@ -68,10 +68,10 @@ function AssessMedi() {
         <form className="assess-form">
           <div className="form-group">
             <label>Weight (kg)
-              <input type="text" id="weight" name="weight" value={weight} onChange={handleWeightChange} placeholder="Enter your weight" required />
+              <input style={{ marginLeft: '20px' }} type="text" id="weight" name="weight" value={weight} onChange={handleWeightChange} placeholder="Enter your weight" required />
             </label>
             <label>Height (cm)
-              <input type="text" id="height" name="height" value={height} onChange={handleHeightChange} placeholder="Enter your height" required />
+              <input style={{ marginLeft: '20px' }} type="text" id="height" name="height" value={height} onChange={handleHeightChange} placeholder="Enter your height" required />
             </label>
             <div className="button-container">
               <button onClick={buttonClick}>Submit</button>
