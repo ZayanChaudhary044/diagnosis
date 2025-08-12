@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import '../NavBar.css';
+import HomePage from '../pages/HomePage';
+import News from '../pages/MediNews';
+import Stats from '../pages/Stats';
+import Schecker from '../pages/SymptomCheck';
+import AssessMedi from '../pages/AssessMedi';
+
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
