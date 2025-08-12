@@ -22,7 +22,7 @@ function HomePage() {
         <div className="imgtile">
           <div className="teammember1">
             <img src={empty} alt="studentcard"></img>
-            <h2>Zayan Chaudhary</h2>
+            <h2>Yusuf Chaudhary</h2>
             <p>Undergrad Student</p>
           </div>
 
