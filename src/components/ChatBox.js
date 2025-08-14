@@ -6,7 +6,7 @@ const ChatBox = ({chatHistory, setChatHistory}) => {
     const [isLoading, setIsLoading] = useState(false);
     
     // Get API key from environment variables
-    const API_KEY = "AIzaSyDtQoHPlEjP3u6DJOaxDJWbQl4mC38ATbk";
+    const API_KEY = "AIzaSyBFFJ-l_m1-vmJVDUGtIOK94IZhH6-Ltr8";
 
     // Function to format AI responses with proper HTML
     const formatAIResponse = (text) => {
