@@ -1,13 +1,22 @@
 // src/pages/SymptomCheck.js
 import React from 'react';
 import ChatBox from '../components/ChatBox.js';
+import { useState } from 'react';
 
 function SymptomCheck() {
+   const [chatHistory, setChatHistory] = useState([
+     {
+       role: "bot", 
+       text: "Hey there 👋 How can I help you with your health concerns today?"
+     }
+   ]);
+
   return (
     <div>
-      <h2>Symptom Checker</h2>
-      <p style={{ marginLeft: '20px'}}>Enter your symptoms to begin diagnosis.</p>
-      <ChatBox />
+      <ChatBox 
+        chatHistory={chatHistory} 
+        setChatHistory={setChatHistory}
+      />
     </div>
   );
 }
