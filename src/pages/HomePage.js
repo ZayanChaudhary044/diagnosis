@@ -35,7 +35,7 @@ function HomePage() {
 
         <h2 className="team">Contact Us</h2>
         <p className="contact">
-          Whether you want to enquire about information or contact us directly,
+          Whether you want to enquire about our website or contact us directly,
           find us here
         </p>
       </header>

@@ -1,319 +1,333 @@
 /* Medical Navbar Styles */
 .navbar {
-    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-    border-bottom: 2px solid #e1f5fe;
-    box-shadow: 0 2px 20px rgba(0, 150, 199, 0.08);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    transition: all 0.3s ease;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-bottom: 2px solid #e1f5fe;
+  box-shadow: 0 2px 20px rgba(0, 150, 199, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
 }
 
 .navbar-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
 }
 
 /* Brand/Logo Section */
 .navbar-brand {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
 }
 
 .logo-image {
-    padding-right: 10px;
-    width: 60px;
-    /* square dimensions */
-    height: 60px;
-    object-fit: cover;
-    /* ensures logo scales nicely */
-    border-radius: 8px;
-    /* optional: slight rounding */
+  padding-right: 10px;
+  width: 60px;
+  /* square dimensions */
+  height: 60px;
+  object-fit: cover;
+  /* ensures logo scales nicely */
+  border-radius: 8px;
+  /* optional: slight rounding */
 }
 
 .logo-icon:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .medical-cross {
-    width: 24px;
-    height: 24px;
-    fill: white;
+  width: 24px;
+  height: 24px;
+  fill: white;
 }
 
 .brand-text {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #023e8a;
-    margin: 0;
-    letter-spacing: -0.5px;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #023e8a;
+  margin: 0;
+  letter-spacing: -0.5px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 /* Navigation Menu */
 .navbar-menu {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-item {
-    position: relative;
+  position: relative;
 }
 
 .navbar-link {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1rem;
-    color: #495057;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.9rem;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  color: #495057;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .navbar-link::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 150, 199, 0.1), transparent);
-    transition: left 0.5s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 150, 199, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
 }
 
 .navbar-link:hover::before {
-    left: 100%;
+  left: 100%;
 }
 
 .navbar-link:hover {
-    color: #0096c7;
-    background-color: rgba(0, 150, 199, 0.05);
-    transform: translateY(-1px);
+  color: #0096c7;
+  background-color: rgba(0, 150, 199, 0.05);
+  transform: translateY(-1px);
 }
 
 .navbar-link.active {
-    color: #0096c7;
-    background-color: rgba(0, 150, 199, 0.1);
+  color: #0096c7;
+  background-color: rgba(0, 150, 199, 0.1);
 }
 
 .nav-icon {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-    transition: transform 0.3s ease;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  transition: transform 0.3s ease;
 }
 
 .navbar-link:hover .nav-icon {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Login Button */
 .navbar-auth {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .login-button {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    background: linear-gradient(135deg, #0096c7 0%, #0077b6 100%);
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 150, 199, 0.2);
-    position: relative;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #0096c7 0%, #0077b6 100%);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 150, 199, 0.2);
+  position: relative;
+  overflow: hidden;
 }
 
 .login-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
 }
 
 .login-button:hover::before {
-    left: 100%;
+  left: 100%;
 }
 
 .login-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 25px rgba(0, 150, 199, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 150, 199, 0.3);
 }
 
 .login-button:active {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .login-icon {
-    width: 18px;
-    height: 18px;
-    fill: currentColor;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
 /* Mobile Toggle Button */
 .mobile-toggle {
-    display: none;
-    flex-direction: column;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    gap: 4px;
-    z-index: 1001;
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  gap: 4px;
+  z-index: 1001;
 }
 
 .mobile-toggle span {
-    width: 25px;
-    height: 3px;
-    background: #023e8a;
-    border-radius: 2px;
-    transition: all 0.3s ease;
+  width: 25px;
+  height: 3px;
+  background: #023e8a;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
 .mobile-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .mobile-toggle.active span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .mobile-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px);
+  transform: rotate(-45deg) translate(7px, -6px);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .navbar-container {
-        padding: 0 1rem;
-    }
+  .navbar-container {
+    padding: 0 1rem;
+  }
 
-    .mobile-toggle {
-        display: flex;
-    }
+  .mobile-toggle {
+    display: flex;
+  }
 
-    .navbar-menu {
-        position: fixed;
-        top: 70px;
-        left: 0;
-        right: 0;
-        background: white;
-        flex-direction: column;
-        padding: 2rem 1rem;
-        gap: 0;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        transform: translateY(-100%);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-    }
+  .navbar-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
 
-    .navbar-menu.mobile-active {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-    }
+  .navbar-menu.mobile-active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
 
-    .navbar-item {
-        width: 100%;
-        margin-bottom: 0.5rem;
-    }
+  .navbar-item {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
 
-    .navbar-link {
-        padding: 1rem;
-        justify-content: flex-start;
-        width: 100%;
-        border-radius: 10px;
-    }
+  .navbar-link {
+    padding: 1rem;
+    justify-content: flex-start;
+    width: 100%;
+    border-radius: 10px;
+  }
 
-    .navbar-auth {
-        position: fixed;
-        bottom: 2rem;
-        left: 1rem;
-        right: 1rem;
-        margin: 0;
-        z-index: 1002;
-    }
+  .navbar-auth {
+    position: fixed;
+    bottom: 2rem;
+    left: 1rem;
+    right: 1rem;
+    margin: 0;
+    z-index: 1002;
+  }
 
-    .login-button {
-        width: 100%;
-        justify-content: center;
-        padding: 1rem;
-    }
+  .login-button {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .brand-text {
-        font-size: 1.5rem;
-    }
+  .brand-text {
+    font-size: 1.5rem;
+  }
 
-    .logo-icon {
-        width: 35px;
-        height: 35px;
-    }
+  .logo-icon {
+    width: 35px;
+    height: 35px;
+  }
 
-    .medical-cross {
-        width: 20px;
-        height: 20px;
-    }
+  .medical-cross {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.logo-image {
+  width: auto;
+  height: auto;
 }
 
 /* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
-
-    .navbar-link,
-    .login-button,
-    .logo-icon,
-    .mobile-toggle span,
-    .navbar-menu {
-        transition: none;
-    }
+  .navbar-link,
+  .login-button,
+  .logo-icon,
+  .mobile-toggle span,
+  .navbar-menu {
+    transition: none;
+  }
 }
 
 /* Focus states for accessibility */
 .navbar-link:focus,
 .login-button:focus,
 .mobile-toggle:focus {
-    outline: 2px solid #0096c7;
-    outline-offset: 2px;
+  outline: 2px solid #0096c7;
+  outline-offset: 2px;
 }
 
 /* High contrast mode support */
 @media (prefers-contrast: high) {
-    .navbar {
-        border-bottom: 3px solid #023e8a;
-    }
+  .navbar {
+    border-bottom: 3px solid #023e8a;
+  }
 
-    .navbar-link {
-        border: 1px solid transparent;
-    }
+  .navbar-link {
+    border: 1px solid transparent;
+  }
 
-    .navbar-link:hover {
-        border-color: #0096c7;
-    }
+  .navbar-link:hover {
+    border-color: #0096c7;
+  }
 }

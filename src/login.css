@@ -1,4 +1,332 @@
+/* Medical Authentication Page Styles */
 
-h1 {
-    
+/* Main container */
+.Home {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e1f5fe 100%);
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(0, 150, 199, 0.15);
+  border: 2px solid #e1f5fe;
+  position: relative;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0096c7, #0077b6, #20c997);
+  border-radius: 20px 20px 0 0;
+}
+
+/* Header styling */
+.container h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #023e8a;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.container h1::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #0096c7, #0077b6);
+  border-radius: 2px;
+}
+
+/* Welcome message for logged in users */
+.container p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #495057;
+  margin: 1rem 0 2rem 0;
+  line-height: 1.6;
+}
+
+/* Form styling */
+form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Form groups */
+form > div {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #023e8a;
+  margin-bottom: 0.5rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Input fields */
+.bmi-input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  border: 2px solid #e1f5fe;
+  border-radius: 12px;
+  background: #f8fafc;
+  transition: all 0.3s ease;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.bmi-input:focus {
+  border-color: #0096c7;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(0, 150, 199, 0.1);
+  transform: translateY(-1px);
+}
+
+.bmi-input::placeholder {
+  color: #6c757d;
+  font-weight: 400;
+}
+
+/* Primary button (Login/Register) */
+.bmi-button-primary {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #0096c7 0%, #0077b6 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  box-shadow: 0 4px 15px rgba(0, 150, 199, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.bmi-button-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.bmi-button-primary:hover::before {
+  left: 100%;
+}
+
+.bmi-button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 150, 199, 0.3);
+}
+
+.bmi-button-primary:active {
+  transform: translateY(0);
+}
+
+/* Secondary button (Switch mode/Sign out) */
+.bmi-button-secondary {
+  background: transparent;
+  color: #0096c7;
+  border: 2px solid #0096c7;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.bmi-button-secondary:hover {
+  background: #0096c7;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0, 150, 199, 0.2);
+}
+
+/* Mode switch section */
+.container p:last-child {
+  text-align: center;
+  margin-top: 2rem !important;
+  font-size: 1rem;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Message styling */
+.container p[style*="marginTop: 12"] {
+  background: linear-gradient(135deg, #e1f5fe 0%, #f0f9ff 100%);
+  border: 1px solid #0096c7;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1.5rem !important;
+  color: #023e8a;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Success message */
+.container p[style*="marginTop: 12"]:has-text("Check your email") {
+  background: linear-gradient(135deg, #d4edda 0%, #f0fff4 100%);
+  border-color: #20c997;
+  color: #155724;
+}
+
+/* Error message styling */
+.container p[style*="marginTop: 12"]:has-text("Invalid") {
+  background: linear-gradient(135deg, #f8d7da 0%, #fff5f5 100%);
+  border-color: #dc3545;
+  color: #721c24;
+}
+
+/* Welcome screen for logged in users */
+.container:has(p:contains("You are logged in")) {
+  text-align: center;
+}
+
+.container:has(p:contains("You are logged in")) .bmi-button-secondary {
+  margin-top: 1rem;
+  width: auto;
+  min-width: 120px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .Home {
+    padding: 1rem;
+  }
+  
+  .container {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+  
+  .container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .bmi-input {
+    padding: 0.875rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .bmi-button-primary {
+    padding: 0.875rem 1.25rem;
+    font-size: 1rem;
+  }
+  
+  .container p:last-child {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .container h1 {
+    font-size: 1.6rem;
+  }
+  
+  .bmi-input {
+    padding: 0.75rem 1rem;
+  }
+  
+  .bmi-button-primary,
+  .bmi-button-secondary {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Loading state */
+.bmi-button-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.bmi-button-primary:disabled:hover {
+  transform: none;
+  box-shadow: 0 4px 15px rgba(0, 150, 199, 0.2);
+}
+
+/* Focus states for accessibility */
+.bmi-button-primary:focus,
+.bmi-button-secondary:focus {
+  outline: 2px solid #0096c7;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .container {
+    border: 3px solid #023e8a;
+  }
+  
+  .bmi-input {
+    border: 2px solid #023e8a;
+  }
+  
+  .bmi-input:focus {
+    border: 3px solid #0096c7;
+  }
+  
+  .bmi-button-secondary {
+    border: 3px solid #0096c7;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .bmi-input,
+  .bmi-button-primary,
+  .bmi-button-secondary,
+  .bmi-button-primary::before {
+    transition: none;
+  }
+  
+  .bmi-button-primary:hover,
+  .bmi-button-secondary:hover,
+  .bmi-input:focus {
+    transform: none;
+  }
 }

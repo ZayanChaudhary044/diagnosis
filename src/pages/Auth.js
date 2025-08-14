@@ -47,7 +47,7 @@ export default function Auth() {
   if (user) {
     return (
       <div className="Home">
-        <header className="container">
+        <header className="login-container">
           <h1>Welcome{user.email ? `, ${user.email}` : ''}</h1>
           <p>You are logged in.</p>
           <button className="bmi-button-secondary" onClick={handleLogout}>Sign out</button>

@@ -3,7 +3,7 @@ import "../login.css";
 function Login() {
     return (
       <div className="Home">
-        <header className="container">
+        <header className="login-container">
           <h1>Login</h1>
           <container>
             <border className="login-border">

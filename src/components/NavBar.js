@@ -19,12 +19,13 @@ function NavBar() {
       <div className="navbar-container">
         {/* Logo Section */}
         <div className="navbar-brand">
+          
           <img
-            src="/logo.png"
+            src="/askmedilogo.png"
             alt="AskMedi logo"
             className="logo-image"
           />
-          <h1 className="brand-text">AskMedi</h1>
+          
         </div>
 
         {/* Mobile Menu Toggle */}
