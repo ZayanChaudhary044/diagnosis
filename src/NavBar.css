@@ -27,16 +27,15 @@
     text-decoration: none;
 }
 
-.logo-icon {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, #0096c7 0%, #0077b6 100%);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 15px rgba(0, 119, 182, 0.2);
-    transition: transform 0.3s ease;
+.logo-image {
+    padding-right: 10px;
+    width: 60px;
+    /* square dimensions */
+    height: 60px;
+    object-fit: cover;
+    /* ensures logo scales nicely */
+    border-radius: 8px;
+    /* optional: slight rounding */
 }
 
 .logo-icon:hover {
@@ -213,11 +212,11 @@
     .navbar-container {
         padding: 0 1rem;
     }
-    
+
     .mobile-toggle {
         display: flex;
     }
-    
+
     .navbar-menu {
         position: fixed;
         top: 70px;
@@ -233,25 +232,25 @@
         visibility: hidden;
         transition: all 0.3s ease;
     }
-    
+
     .navbar-menu.mobile-active {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
     }
-    
+
     .navbar-item {
         width: 100%;
         margin-bottom: 0.5rem;
     }
-    
+
     .navbar-link {
         padding: 1rem;
         justify-content: flex-start;
         width: 100%;
         border-radius: 10px;
     }
-    
+
     .navbar-auth {
         position: fixed;
         bottom: 2rem;
@@ -260,7 +259,7 @@
         margin: 0;
         z-index: 1002;
     }
-    
+
     .login-button {
         width: 100%;
         justify-content: center;
@@ -272,12 +271,12 @@
     .brand-text {
         font-size: 1.5rem;
     }
-    
+
     .logo-icon {
         width: 35px;
         height: 35px;
     }
-    
+
     .medical-cross {
         width: 20px;
         height: 20px;
@@ -286,6 +285,7 @@
 
 /* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
+
     .navbar-link,
     .login-button,
     .logo-icon,
@@ -308,11 +308,11 @@
     .navbar {
         border-bottom: 3px solid #023e8a;
     }
-    
+
     .navbar-link {
         border: 1px solid transparent;
     }
-    
+
     .navbar-link:hover {
         border-color: #0096c7;
     }
