@@ -876,11 +876,6 @@ export default function Stats() {
             border: "1px solid #4caf50",
           }}
         >
-          <div
-            style={{ fontWeight: "bold", color: "#2e7d32", marginBottom: "0.5rem" }}
-          >
-            ✅ REAL HEALTH DATA - COVID-19 + NOTIFIABLE DISEASES
-          </div>
           <div style={{ color: "#424242", fontSize: "0.9rem" }}>
             COVID-19 (disease.sh) + TB/HIV/Malaria (World Bank) + Measles (OWID) +
             CDC NNDSS (US only).
