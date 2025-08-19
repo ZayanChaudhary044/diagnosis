@@ -885,17 +885,7 @@ export default function Stats() {
             COVID-19 (disease.sh) + TB/HIV/Malaria (World Bank) + Measles (OWID) +
             CDC NNDSS (US only).
           </div>
-          <div
-            style={{
-              marginTop: "0.5rem",
-              color: "#c62828",
-              fontSize: "0.85rem",
-              fontWeight: "bold",
-            }}
-          >
-            ⚠️ LIMITATION: Free, browser-safe endpoints are limited. For richer
-            disease catalogs, use a small backend proxy to access WHO/ECDC/PAHO.
-          </div>
+
         </div>
 
         {/* Search Form */}
@@ -1056,13 +1046,7 @@ export default function Stats() {
             </ul>
 
             <div style={{ textAlign: "center", marginTop: "1rem" }}>
-              <button
-                className="bmi-button-secondary"
-                onClick={() => setDebugOpen((v) => !v)}
-                style={{ marginRight: "0.5rem" }}
-              >
-                {debugOpen ? "Hide Debug" : "Show Debug"}
-              </button>
+
               <button
                 className="bmi-button-primary"
                 onClick={() => {
