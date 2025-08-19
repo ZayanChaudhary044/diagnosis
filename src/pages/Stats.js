@@ -865,7 +865,7 @@ export default function Stats() {
   return (
     <div className="Home">
       <header className="container">
-        <h3>🔍 Country Health Statistics - REAL DATA + OFFICIAL REPORTS</h3>
+        <h3>🔍 Country Health Statistics</h3>
 
         <div
           style={{
