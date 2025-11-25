@@ -13,7 +13,7 @@ function MediNews() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('/api/news'); // CALLS SERVERLESS ROUTE
+      const response = await fetch('/api/news'); 
 
       if (!response.ok) {
         throw new Error('Network response was not ok');
